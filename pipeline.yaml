@@ -163,7 +163,7 @@ root:
                 constant: gs://kfserving-examples/models/sklearn/1.0/model
             namespace:
               runtimeValue:
-                constant: hbelmiro
+                constant: hbelmiro-kustomize
         taskInfo:
           name: serve-a-model-with-kserve
 schemaVersion: 2.1.0
