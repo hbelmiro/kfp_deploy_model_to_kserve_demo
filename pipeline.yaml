@@ -135,7 +135,7 @@ deploymentSpec:
         - '{{$.inputs.parameters[''enable_isvc_status'']}}'
         command:
         - python
-        image: quay.io/hbelmiro/kfp_deploy_model_to_kserve_demo:v0.0.2
+        image: quay.io/hbelmiro/kfp_deploy_model_to_kserve_demo:v0.0.3
 pipelineInfo:
   description: A pipeline for creating a KServe inference service.
   name: kserve-pipeline
