@@ -1,5 +1,7 @@
 # Using Data Science Pipelines to deploy a model to KServe in OpenShift AI
 
+This example is based on https://github.com/kubeflow/pipelines/tree/b4ecbabbba1ac3c7cf0e762a48e9b8fcde239911/components/kserve.
+
 In a cluster with the following operators installed:
 
 * Red Hat OpenShift AI
