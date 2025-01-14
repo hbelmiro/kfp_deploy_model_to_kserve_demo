@@ -29,9 +29,15 @@ In a cluster with the following operators installed:
 
 4. Deploy the compiled pipeline (`pipeline.yaml`) in the Red Hat OpenShift AI console
 5. Run the pipeline in the Red Hat OpenShift AI console
-6. When the pipeline completes you should be able to see the `example-precictor` pod
+6. When the pipeline completes you should be able to see the `example-precictor` pod and the `InferenceService`
 
     ```shell
     oc get pods | grep 'example-predictor'
     example-predictor-00001-deployment-7c5bf67574-p6rrs               2/2     Running     0          8m18s
+    ```
+   
+    ```shell
+    oc get inferenceservice
+    NAME      URL                                   READY   PREV   LATEST   PREVROLLEDOUTREVISION   LATESTREADYREVISION       AGE
+    example   https://something.openshiftapps.com   True           100                              example-predictor-00001   12m
     ```
