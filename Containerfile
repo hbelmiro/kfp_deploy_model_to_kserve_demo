@@ -8,7 +8,7 @@ RUN python3 -m pip install --upgrade -r \
     && rm -f requirements.txt
 
 ENV APP_HOME /app
-COPY kservedeployer.py $APP_HOME
+COPY kservedeployer.py $APP_HOME/kservedeployer.py
 WORKDIR $APP_HOME
 
 ENTRYPOINT ["python"]
